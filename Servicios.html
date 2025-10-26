@@ -20,6 +20,7 @@
         Luis Neyra<span>SERVICIOS WEB</span>
       </a>
       <nav>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
         <ul class="menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a class="activo" href="Servicios.html">Servicios</a></li>
@@ -27,6 +28,11 @@
           <li><a href="Contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+          document.querySelector('.menu').classList.toggle('active');
+        });
+      </script>
     </div>
   </header>
 
